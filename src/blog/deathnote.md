@@ -2,6 +2,14 @@
 date: 2024-09-16
 title: "the greek tragedy that is death note"
 tags: ["deep dive"]
-coverimage: "_img/deathnote/cover.png"
+coverImage: "/img/deathnote/header.png"
 ---
-lorem ipsum
+Lorem ipsum odor amet, consectetuer adipiscing elit. Taciti mauris nascetur hac himenaeos facilisis nec nullam vel. Efficitur suscipit suspendisse fermentum conubia mattis morbi ullamcorper risus. Montes integer porta cras proin quam. Tincidunt dapibus fusce per mollis proin blandit. Posuere himenaeos pellentesque penatibus elementum; ultrices nullam lacus. Leo nec non curae commodo nostra efficitur praesent feugiat. Sapien vel diam inceptos; curae id sem. Quam leo laoreet nibh urna curabitur per pharetra ridiculus. Dui est leo in massa molestie ac.
+
+Fringilla iaculis arcu varius at nostra. Netus aliquam torquent, pretium posuere aenean nunc. Elit congue facilisis dictumst; fermentum ac mi mattis sapien. Maecenas nulla fames aptent turpis hendrerit. Cubilia egestas tincidunt malesuada curabitur porta. Tristique nunc quis sed; eleifend morbi elementum per congue. Duis sit sociosqu facilisi accumsan in platea risus mauris. Pharetra consectetur dui suscipit, laoreet dignissim mi. Lorem taciti primis lacus magna mauris porttitor taciti potenti eros.
+
+Vel etiam vivamus neque cras feugiat; molestie nibh. Ipsum et augue sollicitudin inceptos himenaeos. At praesent etiam malesuada nam vestibulum massa ullamcorper. Leo aliquet eget efficitur egestas pellentesque sociosqu eget dapibus? Fringilla nisl commodo porttitor; justo penatibus blandit? Porttitor arcu enim dignissim viverra rutrum dolor leo. Hendrerit lobortis arcu enim eu aliquet metus magna varius?
+
+Scelerisque pulvinar libero nascetur auctor maecenas duis. Risus curabitur fringilla dapibus laoreet vivamus. Sagittis facilisis orci dictum lorem curabitur magnis faucibus. Ante primis ex ornare, imperdiet mattis laoreet arcu. Purus arcu non iaculis, conubia venenatis sit laoreet. Mattis pretium lectus consequat cras egestas non. Sagittis duis suscipit finibus tincidunt inceptos eu maecenas. Ornare mollis pulvinar felis aliquet cursus condimentum hac. Commodo sed natoque quisque pharetra elit fusce habitant sagittis. Dapibus non quisque mus, a ac ut pellentesque.
+
+Donec senectus nulla, laoreet faucibus non arcu dis volutpat. Penatibus facilisi lacinia eleifend himenaeos maecenas ultrices eros. Mauris suscipit leo ipsum justo magnis cras lacinia. Consequat tellus per accumsan purus ante. Conubia bibendum potenti ligula id duis aliquet ipsum. Bibendum finibus libero ullamcorper tellus quisque accumsan congue. Dignissim posuere sociosqu sit rutrum orci dignissim platea. Ipsum imperdiet platea dictum vulputate cursus et; fringilla fermentum.

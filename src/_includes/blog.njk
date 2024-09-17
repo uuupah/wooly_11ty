@@ -1,5 +1,23 @@
----
-layout: base.njk
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <img class="header-image" src="{{ coverImage }}"></img>
+    {# <header>{% include 'header.njk' %}</header> #}
 
-<article>{{ content | safe}}</article>
+    {# <nav>{% include 'navigation.njk' %}</nav> #}
+    <main>
+      <h1 class="blog-header-text">{{ title }}</h1>
+      {%- for tag in tags -%}
+        <div class="tag-span">{{ tag }}</div>
+      {%- endfor -%}
+      <article>{{ content | safe}}</article>
+    </main>
+    <a href="/" class="home-button">home</a>
+  </body>
+</html>

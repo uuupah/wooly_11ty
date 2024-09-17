@@ -37,24 +37,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Make the body a nice central block */
 body {
   color: var(--text);
   background: var(--bg);
+}
+
+/* Make the main a nice central block */
+main {
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 1000px;
   padding: 0 1em;
 }
 
-body > header {
+main > header {
   text-align: center;
   padding: 0 0.5rem 2rem 0.5rem;
   box-sizing: border-box;
 }
 
-body > header h1 {
+main > header h1 {
   max-width: 100%;
   margin: 1rem auto;
 }
@@ -102,7 +105,7 @@ main {
   padding-top: 1.5rem;
 }
 
-body > footer {
+main > footer {
   margin-top: 4rem;
   padding: 2rem 1rem 1.5rem 1rem;
   color: var(--text-light);
@@ -141,4 +144,35 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+.blog-header-text {
+  margin-top: 0;
+  border-bottom: 7px solid var(--text);
+  line-height: 1.05;
+  padding-bottom: 8px;
+}
+
+.header-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tag-span {
+	background-color: var(--text);
+	border-radius: 4px;
+	color: var(--bg);
+	display: inline-block;
+	font-style: italic;
+	margin-right: 8px;
+	min-width: 100px;
+	padding: 2px;
+	text-align: center;
+}
+
+.home-button {
+  position: sticky;
+  left: 16px;
+  bottom: 16px;
 }
