@@ -1,6 +1,6 @@
 ---
 title: about me
-layout: base.njk
+layout: about.njk
 ---
 
 artist and avid twenty year-old box hoarder. i enjoy the finer things in life, like arguing about the dumbest shit ever.

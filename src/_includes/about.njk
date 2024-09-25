@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="about-body">
+        <div class="about-profile-pic-wrapper"><img class="about-profile-pic" src="/img/profilepic.png"></img></div>
+        <div class="about-title-box">
+          <span class="about-title">about me</span>
+        </div>
+        <div class="about-three-bars">three bars</div>
+        <div class="about-content">{{ content | safe }}</div>
+      </div>
+  </body>
+</html>

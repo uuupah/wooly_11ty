@@ -7,10 +7,10 @@
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
   /* Default (light) theme */
-  --bg: #fff;
+  --dark: #fff;
   --accent-bg: #f5f7ff;
-  --text: #333;
-  --text-light: #585858;
+  --light: #333;
+  --light-light: #585858;
   --border: #d8dae1;
   --accent: #0d47a1;
 }
@@ -18,10 +18,10 @@
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #212121;
+    --dark: #212121;
     --accent-bg: #2b2b2b;
-    --text: #dcdcdc;
-    --text-light: #ababab;
+    --light: #dcdcdc;
+    --light-light: #ababab;
     --border: #666;
     --accent: #ffb300;
   }
@@ -38,8 +38,8 @@ html {
 }
 
 body {
-  color: var(--text);
-  background: var(--bg);
+  color: var(--light);
+  background: var(--dark);
 }
 
 /* Make the main a nice central block */
@@ -77,7 +77,7 @@ nav {
 
 nav a {
   margin: 1rem 1rem 0 0;
-  color: var(--text) !important;
+  color: var(--light) !important;
   padding: 0.1rem 1rem;
 }
 
@@ -108,7 +108,7 @@ main {
 main > footer {
   margin-top: 4rem;
   padding: 2rem 1rem 1.5rem 1rem;
-  color: var(--text-light);
+  color: var(--light-light);
   font-size: 0.9rem;
   text-align: center;
   border-top: 1px solid var(--border);
@@ -148,7 +148,7 @@ a:hover {
 
 .blog-header-text {
   margin-top: 0;
-  border-bottom: 7px solid var(--text);
+  border-bottom: 7px solid var(--light);
   line-height: 1.05;
   padding-bottom: 8px;
 }
@@ -160,19 +160,75 @@ a:hover {
 }
 
 .tag-span {
-	background-color: var(--text);
-	border-radius: 4px;
-	color: var(--bg);
-	display: inline-block;
-	font-style: italic;
-	margin-right: 8px;
-	min-width: 100px;
-	padding: 2px;
-	text-align: center;
+  background-color: var(--light);
+  border-radius: 4px;
+  color: var(--dark);
+  display: inline-block;
+  font-style: italic;
+  margin-right: 8px;
+  min-width: 100px;
+  padding: 2px;
+  text-align: center;
 }
 
 .home-button {
   position: sticky;
   left: 16px;
   bottom: 16px;
+}
+
+.about-profile-pic {
+  width: 200px;
+  height: 200px;
+  margin: 16px;
+  border: 4px solid var(--dark);
+  outline: 16px solid var(--light);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  border-radius: 100px;
+  /* box-sizing: border-box; */
+  z-index: 1;
+}
+
+.about-profile-pic-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 16px;
+  background-color: var(--dark);
+  border: 4px solid var(--dark);
+  border-radius: 116px;
+  align-self: center;
+  /* justify-self: center; */
+  /* box-sizing: border-box; */
+}
+
+.about-body {
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 240px auto;
+}
+
+.about-title-box {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-left: -44px;
+  height: 140px;
+  background-color: var(--light);
+  width: 400px;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.about-title {
+  color: var(--dark);
+  font-size: 48px;
+  font-weight: bold;
+  /* this sucks but it also works so whatever */
+  text-align: right;
+  width: 100%;
+  padding-right: 60px;
 }
