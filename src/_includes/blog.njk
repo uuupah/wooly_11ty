@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>{{ title }}</title>
   </head>
@@ -14,7 +15,13 @@
     <main>
       <h1 class="blog-header-text">{{ title }}</h1>
       {%- for tag in tags -%}
-        <div class="tag-span">{{ tag }}</div>
+        {% if tag == 'TW!' or tag == 'NSFW!'%}
+          <div class="tag-span tag-red">{{ tag }}</div>
+        {% elif tag == 'review' or tag == 'deep dive' %}
+          <div class="tag-span tag-grey">{{ tag }}</div>
+        {% else %}
+          <div class="tag-span">{{ tag }}</div>
+        {% endif %}
       {%- endfor -%}
       <article>{{ content | safe}}</article>
     </main>
