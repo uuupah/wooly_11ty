@@ -1,0 +1,25 @@
+---
+title: papersheep
+layout: base.njk
+---
+
+{% for post in collections.blog %}
+  <a class="homepage-post" href="/blog/{{post.data.page.fileSlug}}">
+    <img class="header-image" src="{{ post.data.coverImage }}"></img>
+    <div class="homepage-post-content">
+      <h2 class="homepage-post-header-text">{{post.data.title}}</h2>
+      <div class="tag-strip">
+        {%- for tag in post.data.tags -%}
+          {% if tag in red_tags %}
+            <div class="tag-span tag-red">{{ tag }}</div>
+          {% elif tag in grey_tags %}
+            <div class="tag-span tag-grey">{{ tag }}</div>
+          {% else %}
+            <div class="tag-span tag-inverse">{{ tag }}</div>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+      <div class="homepage-post-content-text">{{post.page.rawInput}}</div>
+    </div>
+  </a>
+{% endfor %}
