@@ -15,9 +15,9 @@
     <main>
       <h1 class="blog-header-text">{{ title }}</h1>
       {%- for tag in tags -%}
-        {% if tag == 'TW!' or tag == 'NSFW!'%}
+        {% if tag in red_tags %}
           <div class="tag-span tag-red">{{ tag }}</div>
-        {% elif tag == 'review' or tag == 'deep dive' %}
+        {% elif tag in grey_tags %}
           <div class="tag-span tag-grey">{{ tag }}</div>
         {% else %}
           <div class="tag-span">{{ tag }}</div>
