@@ -32,6 +32,14 @@ body {
   background: var(--dark);
 }
 
+.centered-text {
+  text-align: center;
+}
+
+.flex-snap-to-bottom {
+  align-self: flex-end;
+}
+
 .index-wrapper {
   display: flex;
   width: 100%;
@@ -41,6 +49,7 @@ body {
 }
 
 .index-header {
+  color: var(--dark);
   min-width: 500px;
   background-color: var(--light-light);
   padding: 16px;
@@ -49,6 +58,46 @@ body {
   max-height: calc(100vh - 100px);
   position: sticky;
   top: 50px;
+}
+
+.index-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.index-header-top {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.index-header-avatar {
+  height: 240px;
+  width: 240px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.index-header-title {
+  width: 100%;
+  max-height: 190px;
+}
+
+.index-header-contents {
+}
+
+.index-profile-pic-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 16px;
+  background-color: var(--dark);
+  border: 4px solid var(--dark);
+  border-radius: 116px;
+  align-self: center;
+  /* justify-self: center; */
+  /* box-sizing: border-box; */
 }
 
 /* Make the main a nice central block */
@@ -231,7 +280,7 @@ a:visited {
   height: 200px;
   margin: 16px;
   border: 4px solid var(--dark);
-  outline: 16px solid var(--light);
+  outline: 16px solid var(--light-light);
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 24px;
