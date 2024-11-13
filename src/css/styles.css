@@ -118,6 +118,26 @@ body {
   min-width: 3px;
 }
 
+@media all and (max-width: 1200px) {
+  .index-wrapper {
+    flex-direction: column;
+  }
+
+  .index-header {
+    width: 100%;
+    position: static;
+  }
+
+  .index-bloglist {
+    margin: 0;
+    padding: 0;
+  }
+
+  .index-vertical-rule {
+    display: none;
+  }
+}
+
 /* Format navigation */
 nav {
   border-bottom: 1px solid var(--border);
