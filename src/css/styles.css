@@ -49,8 +49,12 @@ body {
 }
 
 .index-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   color: var(--dark);
   min-width: 500px;
+  width: 500px;
   background-color: var(--light-light);
   padding: 16px;
   margin: 50px 32px 50px 0;
@@ -58,12 +62,6 @@ body {
   max-height: calc(100vh - 100px);
   position: sticky;
   top: 50px;
-}
-
-.index-header {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .index-header-top {
