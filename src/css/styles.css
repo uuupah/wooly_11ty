@@ -291,10 +291,17 @@ a:visited {
   background-color: var(--inverse);
 }
 
+.safety-spacer {
+  height: 45px;
+}
+
 .home-button {
-  position: sticky;
+  position: fixed;
   left: 16px;
   bottom: 16px;
+  background-color: var(--dark);
+  padding: 6px;
+  border-radius: 3px;
 }
 
 .about-profile-pic {
