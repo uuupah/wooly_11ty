@@ -1,13 +1,9 @@
 ---
 title: This Is My Blog
-layout: base.njk
+layout: bloglist.njk
 ---
 
-These are all of my amazing blog posts, enjoy!
-<ul>
+all blogposts
   {% for post in collections.blog | reverse %}
-  <li>
-    <a href="{{ post.data.page.fileSlug }} ">{{ post.data.title }}</a>
-  </li>
+    \- <a href="{{ post.data.page.fileSlug }} ">{{ post.data.title }}</a>
   {% endfor %}
-</ul>

@@ -82,6 +82,9 @@ body {
 .index-header-title {
   width: 100%;
   max-height: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .index-header-contents {
@@ -401,4 +404,18 @@ a:visited {
 
 .about-content p:first-of-type {
   margin-top: 0;
+}
+
+.bloglist-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.bloglist {
+  width: max-content;
+  max-width: 1000px;
+}
+
+.bloglist > p {
+  margin: 0;
 }
