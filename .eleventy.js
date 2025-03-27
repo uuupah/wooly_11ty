@@ -1,8 +1,6 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/img");
-  // eleventyConfig.addPassthroughCopy("./src/fonts");
-  // eleventyConfig.addPassthroughCopy("./src/js");
+  eleventyConfig.addPassthroughCopy("./src/_css");
+  eleventyConfig.addPassthroughCopy("./src/_img");
   eleventyConfig.addShortcode("tags", function (tagList) {
     var out = "";
     for (tag in tagList) {
@@ -17,7 +15,6 @@ module.exports = function (eleventyConfig) {
       //     out += `<div class="tag-span">${tag}</div>`;
       //   }
     }
-    // return out;
     return tagList;
   });
 
